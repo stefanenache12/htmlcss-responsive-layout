@@ -76,7 +76,27 @@ header .container .nav-menu {
 }
 
 
+/*SECOND SECTION*/
 
+.second-section {
+    background-color: var(--third-color);
+}
+
+/*THIRD SECTION*/
+
+.third-section {
+    text-align: center;
+}
+
+.third-section h3,h2,p {
+    margin-top: .9375rem;
+}
+
+.testimonials {
+    background-color: var(--third-color);
+    margin-top: .9375rem;
+    border-radius: .9375rem;
+}
 
 
 
@@ -99,6 +119,15 @@ header .container .nav-menu {
     .first-section .cards > :first-child {
         width: calc(((100% / 3) * 2) - 1.25rem);
     }
+
+    /*THIRD SECTION*/
+
+    .testimonials {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
 
     
 
@@ -132,6 +161,22 @@ header .container .nav-menu {
     .first-card-content {
         display: flex;
         justify-content: space-between;
+    }
+
+    /*SECOND SECTION*/
+
+    .second-section .container {
+        width: 60%;
+    }
+
+    .second-section .cards {
+        display: flex;
+
+    }
+
+    .second-section .card {
+        width: 50%;
+        
     }
 
     
