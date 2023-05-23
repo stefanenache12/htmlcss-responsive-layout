@@ -52,6 +52,30 @@ header .container .nav-menu {
 }
 
 
+/*****MAIN*****/
+
+/*FIRST SECTION*/
+
+.first-section {
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.first-section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.625rem;
+}
+
+
+.first-section .cards .card {
+    background-color: var(--second-color);
+    width: calc(100% - 1.25rem);
+    margin: 0 .625rem 1.25rem;
+    border-radius: .9375rem;
+}
+
+
 
 
 
@@ -60,25 +84,37 @@ header .container .nav-menu {
             RESPONSIVE
 ------------------------------------*/
 
-/*TABLET MIN WIDTH 768px*/
+/*****TABLET MIN WIDTH 768px*****/
 
 @media screen and (min-width:768px) {
     
+    /***MAIN***/
 
+    /*FIRST SECTION*/
 
+    .first-section .cards .card {
+        width: calc((100% / 3 ) - 1.25rem);
+    }
+    
+    .first-section .cards > :first-child {
+        width: calc(((100% / 3) * 2) - 1.25rem);
+    }
+
+    
 
 }
 
 
-/*DESKTOP MIN WIDTH 992px*/
+/*****DESKTOP MIN WIDTH 992px*****/
 
 @media screen and (min-width:992px) {
     
-    /*HEADER*/
+    /***HEADER***/
 
     .container {
         width: 80%;
         margin: 0 auto;
+        padding: 0;
     }
 
     header .container .nav-menu {
@@ -87,6 +123,15 @@ header .container .nav-menu {
 
     header .container .hamburger-menu {
         display: none;
+    }
+
+    /***MAIN***/
+
+    /*FIRST SECTION*/
+
+    .first-card-content {
+        display: flex;
+        justify-content: space-between;
     }
 
     
