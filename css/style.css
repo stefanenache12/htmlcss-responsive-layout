@@ -176,6 +176,41 @@ header .container .nav-menu {
     padding: .9375rem 0;
 }
 
+.second-section  h2 {
+    color: white;
+    font-size: 1.875rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.second-section  p {
+    color: white;
+    line-height: 1.875rem;
+    padding-bottom: 1.25rem;
+}
+
+.white-card {
+    background-color: white;
+    border-radius: 3.125rem;
+    text-align: center;
+    padding: 0 1.875rem;
+}
+
+.white-card h2 {
+    color: black;
+    font-size: x-large;
+}
+
+.white-card p {
+    color: black;
+}
+
+.circle-arrow {
+    color: var(--third-color);
+    font-size: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
 /*THIRD SECTION*/
 
 .third-section {
@@ -183,14 +218,40 @@ header .container .nav-menu {
 }
 
 .third-section h3,h2,p {
-    margin-top: .9375rem;
+    margin-top: 2.5rem;
+}
+
+.third-section h2 {
+    color: var(--third-color);
+    font-size: 1.875rem;
+}
+
+.third-section p {
+    line-height: 1.5625rem;
+    margin-bottom: 2.5rem;
 }
 
 .testimonials {
     background-color: var(--third-color);
     margin-top: .9375rem;
-    border-radius: .9375rem;
+    border-radius: 4rem;
     padding: .625rem .625rem;
+}
+
+.testimonials-left img {
+    border-radius: 50%;
+    height: 12.5rem;
+    width: 12.5rem;
+    object-fit: cover;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.testimonials-right {
+    padding: 1.25rem 1.875rem;
+    line-height: 1.875rem;
+    color: white;
+    font-size: 1.25rem;
 }
 
 /*FOURTH SECTION*/
@@ -277,12 +338,16 @@ footer .container :nth-child(2) {
         margin-left: 1.25rem;
     }
 
+
     /*THIRD SECTION*/
 
     .testimonials {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        text-align: left;
     }
+
 
     /*FOURTH SECTION*/
 
@@ -338,7 +403,9 @@ footer .container :nth-child(2) {
 }
 
 
-/*****DESKTOP MIN WIDTH 992px*****/
+/*------------------------------------------
+    DESKTOP MIN WIDTH 992px
+    -------------------------------------------*/
 
 @media screen and (min-width:992px) {
     
@@ -367,12 +434,20 @@ footer .container :nth-child(2) {
     .first-card-content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
+
 
     .first-card-content-right img {
         width: 100%;
         margin: 0 auto;
-        padding-top: 3.125rem;
+        padding-top: 4.375rem;
+        padding-right: 2.5rem;
+        min-height: 25rem;
+    }
+
+    .first-section .cards > :not(:first-child) {
+        padding: 0 1.875rem;
     }
 
     /*SECOND SECTION*/
@@ -389,6 +464,11 @@ footer .container :nth-child(2) {
 
     .second-section .card {
         width: 50%;  
+    }
+
+    .white-card {
+        margin-left: 2.5rem;
+        margin-top: 3.125rem;
     }
 
     /*FOURTH SECTION*/
