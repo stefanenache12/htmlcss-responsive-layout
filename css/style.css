@@ -50,6 +50,7 @@ h2 {
     color: #63798C;
     font-weight: 600;
     text-align: center;
+    line-height: 1.5625rem;
 }
 
 /****HEADER****/
@@ -130,6 +131,10 @@ header .container .nav-menu {
 }
 
 
+.first-section .cards > :first-child {
+    align-self: flex-start;
+}
+
 .first-section .cards .card {
     background-color: var(--second-color);
     width: calc(100% - 1.25rem);
@@ -175,6 +180,10 @@ header .container .nav-menu {
 .second-section {
     background-color: var(--third-color);
     padding: .9375rem 0;
+}
+
+.second-section .cards > :nth-child(2) {
+    align-self: flex-end;
 }
 
 .second-section  h2 {
@@ -417,15 +426,8 @@ footer {
 
 footer p {
     margin: 0;
-    padding: .625rem 0;
+    padding: 2.5rem 0;
 }
-
-footer .container :nth-child(2) {
-    padding-top: 2.5rem;
-}
-
-
-
 
 
 
@@ -568,7 +570,7 @@ footer .container :nth-child(2) {
         margin: 0 auto;
         padding-top: 4.375rem;
         padding-right: 2.5rem;
-        min-height: 25rem;
+        min-height: 20rem;
     }
 
     .first-section .cards > :not(:first-child) {
@@ -585,10 +587,6 @@ footer .container :nth-child(2) {
     .second-section .cards {
         display: flex;
 
-    }
-
-    .second-section .card {
-        width: 50%;  
     }
 
     .white-card {
@@ -637,6 +635,8 @@ footer .container :nth-child(2) {
         width: 30%;
         margin: 0 auto;
     }
+
+
     
 
     
