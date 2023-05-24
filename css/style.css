@@ -11,9 +11,45 @@ body {
 }
 
 .container {
-    padding: 0 .625rem;
+    padding: 0 1.875rem;
 }
 
+
+.button-style {
+    border: none;
+    border-radius: .9375rem;
+    padding: .3125rem .625rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.first-section .cards  > :not(:first-child) {
+    padding: 1.875rem 2.5rem;
+}
+
+.first-section .cards  > :not(:first-child) * {
+    padding-bottom: 1.25rem;
+}
+
+.card-font-awesome {
+    color: var(--main-color);
+    font-size: 5rem;
+}
+
+h2 {
+    color: var(--main-color);
+    font-size: 1.375rem;
+}
+
+.first-section p {
+    color: #63798C;
+    font-weight: 600;
+    text-align: center;
+}
 
 /****HEADER****/
 
@@ -28,12 +64,16 @@ header .container {
 }
 
 header .container > * {
-    padding: 1.25rem 0;
+    padding: .9375rem 0;
 }
 
 header .container .hamburger-menu {
     color: white;
     font-size: 2rem;
+}
+
+.bars-menu {
+    font-size: x-large;
 }
 
 .hamburger-menu {
@@ -67,7 +107,8 @@ header .container .nav-menu {
 
 .nav-menu ul li {
     display: inline-block;
-    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+    font-size: small;
 }
 
 
@@ -76,8 +117,9 @@ header .container .nav-menu {
 /*FIRST SECTION*/
 
 .first-section {
-    margin-top: 1.25rem;
-    margin-bottom: .9375rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.875rem;
+    text-align: center;
 }
 
 .first-section .cards {
@@ -92,7 +134,39 @@ header .container .nav-menu {
     width: calc(100% - 1.25rem);
     margin: 0 .625rem 1.25rem;
     border-radius: .9375rem;
+    
 }
+
+.first-card-content-left h2 {
+    margin: 1.25rem 1.875rem;
+    text-align: left;
+}
+
+#left-p {
+    text-align: left;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+
+.first-card-content-left h2 {
+    padding-top: .625rem;
+}
+
+.first-card-content-right img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.first-section button {
+    font-size: medium;
+    color: white;
+    padding: .625rem 2.5rem;
+    background-color: var(--main-color);
+    margin: 1.25rem 1.875rem;
+    text-align: left;
+}
+
 
 
 /*SECOND SECTION*/
@@ -194,6 +268,15 @@ footer .container :nth-child(2) {
         width: calc(((100% / 3) * 2) - 1.25rem);
     }
 
+    .first-card-content-left {
+        text-align: left;
+    }
+
+    .first-card-content-right img {
+        width: 50%;
+        margin-left: 1.25rem;
+    }
+
     /*THIRD SECTION*/
 
     .testimonials {
@@ -262,7 +345,7 @@ footer .container :nth-child(2) {
     /***HEADER***/
 
     .container {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         padding: 0;
     }
@@ -275,6 +358,8 @@ footer .container :nth-child(2) {
         display: none;
     }
 
+    
+
     /***MAIN***/
 
     /*FIRST SECTION*/
@@ -284,10 +369,17 @@ footer .container :nth-child(2) {
         justify-content: space-between;
     }
 
+    .first-card-content-right img {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 3.125rem;
+    }
+
     /*SECOND SECTION*/
 
     .second-section .container {
         width: 60%;
+
     }
 
     .second-section .cards {
