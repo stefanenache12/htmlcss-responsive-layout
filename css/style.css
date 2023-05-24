@@ -38,6 +38,7 @@ img {
 .card-font-awesome {
     color: var(--main-color);
     font-size: 5rem;
+    margin-top: 1.25rem;
 }
 
 h2 {
@@ -217,18 +218,20 @@ header .container .nav-menu {
     text-align: center;
 }
 
-.third-section h3,h2,p {
-    margin-top: 2.5rem;
+.third-section  h3 {
+    padding-top: 2.5rem;
 }
 
 .third-section h2 {
     color: var(--third-color);
     font-size: 1.875rem;
+    padding-top: 2.5rem;
 }
 
 .third-section p {
     line-height: 1.5625rem;
-    margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .testimonials {
@@ -258,24 +261,102 @@ header .container .nav-menu {
 
 .fourth-section {
     background-color: var(--third-color);
-    padding-bottom: 1.25rem;
+    padding-bottom: 2.5rem;
+    margin-top: 2.5rem;
 }
 
 .fourth-section h2 {
     text-align: center;
-    padding-top: 1.25rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    color: white;
+    font-size: 1.875rem;
 }
 
 .fourth-section .card {
     background-color: white;
     margin-top: 1.25rem;
     border-radius: .9375rem;
+    padding: 1.25rem;
+}
+
+.fourth-section .card p {
+    padding: 1.25rem 0;
+    line-height: 1.5625rem;
+    color: #63798C;
+}
+
+.benefits-number {
+    color: var(--third-color);
+    font-size: 3.125rem;
+    font-weight: bold;
+    padding-bottom: 1.25rem;
+}
+
+.benefits-title {
+    color: var(--third-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.benefits-button {
+    background-color: var(--third-color);
+    color: white;
+    padding: .625rem 3rem;
+    font-size: 1.25rem;
+
 }
 
 /*FIFTH SECTION*/
 
 .fifth-section {
     padding: 1.25rem 0;
+}
+
+.fifth-section h2 {
+    color: var(--third-color);
+    font-size: 3.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.875rem;
+}
+
+.fifth-section p {
+    color: rgba(0,0,0,0.7);
+    line-height: 1.875rem;
+    padding-bottom: 3.125rem;
+
+}
+
+.fifth-section img {
+    border-radius: 50%;
+    width: 100%;
+    margin-left: 0;
+    
+}
+
+.about-us-right h2 {
+    font-size: 1.85rem;
+}
+
+.about-us-picture {
+    position: relative;
+    width: 50%;
+}
+
+.quotes-about-us {
+    color: var(--third-color);
+    font-size: 3.75rem;
+    position: absolute;
+    top: 0;
+    right: -0.625rem;
+
+}
+
+.fifth-section button {
+    background-color: var(--third-color);
+    color: white;
+    font-size: medium;
+    margin-bottom: 2.5rem;
 }
 
 /*SIXTH SECTION*/
@@ -286,6 +367,45 @@ header .container .nav-menu {
     padding: .9375rem 1.25rem;
 }
 
+.sixth-section span {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.sixth-section h2 {
+    color: white;
+    padding: 1.875rem 0;
+    font-size: 1.5625rem;
+}
+
+#call-to-action {
+    color: #FDC15F;
+    font-size: 3.125rem;
+}
+
+.sixth-section p {
+    color: white;
+    line-height: 1.5625rem;
+    padding-bottom: 1.875rem;
+}
+
+.sixth-section button {
+    color: var(--third-color);
+    background-color: white;
+    font-size: 1.25rem;
+    padding: .625rem 3.75rem;
+    border-radius: 3.125rem;
+    margin-bottom: 1.875rem;
+}
+
+.sixth-section h5,a {
+    color: white;
+    
+}
+
+.point {
+    font-size: .3125rem;
+    vertical-align: middle;
+}
 
 /****FOOTER****/
 
@@ -379,11 +499,16 @@ footer .container :nth-child(2) {
     }
 
     .about-us-left {
-        width: 70%;
+        width: 60%;
     }
 
     .about-us-right {
-        width: 30%;
+        width: 40%;
+        padding: 2.5rem;
+    }
+
+    .about-us-picture {
+        width: 100%;
     }
 
     /*SIXTH SECTION*/
@@ -479,11 +604,31 @@ footer .container :nth-child(2) {
 
     }
 
+
+    /*FIFTH SECTION*/
+
+    .about-us-picture {
+        width: 80%;
+    }
+
+
     /*SIXTH SECTION*/
 
     .sixth-section .container {
         width: 35%;
         margin: 0 auto;
+    }
+
+    .sixth-section h2 {
+        font-size: 2.rem;
+    }
+    
+    #call-to-action {
+        font-size: 5rem;
+    }
+
+    .sixth-section button {
+        padding: 1.25rem 3.75rem;
     }
 
     /***FOOTER***/
